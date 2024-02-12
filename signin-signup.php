@@ -12,13 +12,13 @@
         <div class="signin-signup">
             <div class="form-container sign-up-container">
                 <div class="image-content">
-                    <img src="image/Allura Online Searching (1).png">
+                    <img src="images/Allura Online Searching (1).png">
                 </div>
             </div>
         </div>
         <div class="form-container sign-in-container">
             <div class="image-content">
-                <img src="image/Allura Online Searching.png">
+                <img src="images/Allura Online Searching.png">
             </div>
         </div>
         <div class="overlay-container">
@@ -109,6 +109,6 @@
             </div>
         </div>
     </div>
-    <script src="js/index.js"></script>
+    <script src="js/signin-signup.js"></script>
 </body>
 </html>
