@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/dashboard_admin.css">
-    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.7/css/jquery.dataTables.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="../css/dashboard_admin.css">
+    <link rel="stylesheet" href="../css/jquery.dataTables.css">
+    <script src="../js/jquery.min.js"></script>
+    
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.js"></script>
+    <script src="../js/jquery.dataTables.js"></script>
     <title>Dashboard</title>
 </head>
 <body>
@@ -24,9 +25,9 @@
                     <p>dashboard > <span>home</span></p>
                 </div>
                <div class="title-content-icon">
-                    <img src="svg_icon/fluent--chat-16-filled.svg" alt="logo">
-                    <img src="svg_icon/ic--round-notifications.svg" alt="logo">
-                    <img src="svg_icon/ic--baseline-menu.svg" alt="logo">
+                    <img src="../svg_icon/fluent--chat-16-filled.svg" alt="logo">
+                    <img src="../svg_icon/ic--round-notifications.svg" alt="logo">
+                    <img src="../svg_icon/ic--baseline-menu.svg" alt="logo">
                </div>
             </div>
 
@@ -36,21 +37,21 @@
                         <p class="card-data">124</p>
                         <p class="card-label">clients</p>
                     </div>
-                    <img src="images/client.png" alt="pic_content" class="img-content">
+                    <img src="../images/client.png" alt="pic_content" class="img-content">
                 </div>
                 <div class="cards" id="card-2">
                     <div class="card-data-label">
                         <p class="card-data">345</p>
                         <p class="card-label">virtual assistant</p>
                     </div>
-                    <img src="images/va.png" alt="pic_content" class="img-content">
+                    <img src="../images/va.png" alt="pic_content" class="img-content">
                 </div>
                 <div class="cards" id="card-3">
                     <div class="card-data-label">
                         <p class="card-data">56</p>
                         <p class="card-label">matching</p>
                     </div>
-                    <img src="images/matching.png" alt="pic_content" class="img-content">
+                    <img src="../images/matching.png" alt="pic_content" class="img-content">
                 </div>
             </div>
             
@@ -69,17 +70,8 @@
                                 <th>Time Tracker</th>
                             </tr>
                         </thead>
-                        <tbody>
-                            <tr>
-                                <td>Gabriel Carpio</td>
-                                <td>GABRIELCARPIO178@GMAIL.COM</td>
-                                <td>09708038647</td>
-                                <td>Sales and Marketing</td>
-                                <td>Go High Level</td>
-                                <td>8 Hours</td>
-                                <td>Found Client</td>
-                                <td>Clockify</td>
-                            </tr>
+                        <tbody id="tbody">
+                            
                         </tbody>
                     </table>
                 </div>
@@ -133,7 +125,5 @@
     </section>
     
 </body>
-<!-- <script src="js/jquery.min.js"></script> -->
-
-<script src="js/dashboard_admin.js"></script>
+<script src="../js/dashboard_admin.js"></script>
 </html>

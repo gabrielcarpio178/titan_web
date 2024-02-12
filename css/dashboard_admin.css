@@ -14,10 +14,7 @@ body{
     color: rgb(6, 54, 6);
 }
 .container-content{
-   position: relative;
-}
-.content{
-    position: absolute;
+    position: relative;
 }
 .title-content{
     text-transform: uppercase;
@@ -109,7 +106,6 @@ body{
 }
 th,td{
     font-size: 0.6rem;
-    text-align: center;
 }
 .content-graph{
     display: flex;
