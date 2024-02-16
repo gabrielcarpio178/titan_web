@@ -30,16 +30,13 @@
             </div>
         </div>
     </header>
-
+<!-- next naman ni sa nga something -->
     <div class="lawas1">
         <div class="about">
-            <p>
-                About the Founders
-            </p>
+            <p>About the Founders</p>
         </div>
 
         <div class="unod1">
-
             <div class="wala1">
                 <img src="images/maamsir1.png" alt="Ma'am Bethany And Sir Corey">
                 <div class="overlay-text"></div>
@@ -47,31 +44,21 @@
 
             <div class="tuo1">
                 <div class="pamagat1">
-                    <p>
-                        <span class="betcolor">Bethany & Corey Bayer</span> started Virtual Assistant (VA) Placement Services back in <span class="betcolor">2021</span>.
-                    </p>
+                    <p><span class="betcolor">Bethany & Corey Bayer</span> started Virtual Assistant (VA) Placement Services back in <span class="betcolor">2021</span>.</p>
                 </div>
                 <div class="pamagat2">
-                    <p>
-                        [ Titan Outsourcing known as "Executive VA" before ]
-                    </p>
+                    <p>[ Titan Outsourcing known as "Executive VA" before ]</p>
                 </div>
                 <div class="cont1">
-                    <p>
-                        Welcome to Titan Outsourcing! We are an American-based company whose mission it is to make businesses more successful through the use of virtual assistants, while providing meaningful employment opportunities for Filipinos.
-                    </p>
-                    <p>
-                        We know that today’s businesses need to stay competitive, and often find themselves stretched thin when it comes to maximizing efficiency. That’s where we come in. We provide our clients with highly-trained Filipino virtual assistants who are reliable, organized and have excellent technical skills. <br>
-                        Our virtual assistants are able to take on a variety of tasks such as customer service, data entry, copywriting, web design, marketing and research. These services free up your time and allow you to focus on the core activities your business needs to succeed. 
-                    </p>
-                    <p>
-                        Furthermore, by partnering with us, you’re directly helping the Filipino community by providing jobs with fair wages and good benefits. Our outsourced professionals also come with local know-how, allowing us to deliver the best possible service. <br>
-                        Titan Outsourcing takes great pride in delivering quality results for our clients at a fraction of the cost. Let us show you how we can help your business become more successful, while making a positive difference in the Filipino community.
-                    </p>
+                    <p>Welcome to Titan Outsourcing! We are an American-based company whose mission it is to make businesses more successful through the use of virtual assistants, while providing meaningful employment opportunities for Filipinos.</p>
+                    <p>We know that today’s businesses need to stay competitive, and often find themselves stretched thin when it comes to maximizing efficiency. That’s where we come in. We provide our clients with highly-trained Filipino virtual assistants who are reliable, organized and have excellent technical skills.<br>
+                    Our virtual assistants are able to take on a variety of tasks such as customer service, data entry, copywriting, web design, marketing and research. These services free up your time and allow you to focus on the core activities your business needs to succeed.</p>
+                    <p>Furthermore, by partnering with us, you’re directly helping the Filipino community by providing jobs with fair wages and good benefits. Our outsourced professionals also come with local know-how, allowing us to deliver the best possible service.<br>
+                    Titan Outsourcing takes great pride in delivering quality results for our clients at a fraction of the cost. Let us show you how we can help your business become more successful, while making a positive difference in the Filipino community.</p>
                 </div>
             </div>
-
         </div>
+    </div>
 <!-- next naman ni sa nga something -->
         <div class="what">
 
@@ -156,7 +143,7 @@
         <div class="cor">
             <div class="pamagat5">
                 <p>Titan Core Values</p>
-                <hr>
+                <hr class="line1">
             </div>
             <div class="vid">
                 <img src="images/vid1.png" alt="">
@@ -231,4 +218,18 @@
     
 </body>
 <script src="js/aboutheader.js"></script>
+<script>
+    window.onload = function() {
+        var imageHeight = document.querySelector('.wala1 img').clientHeight;
+        var imageWidth = document.querySelector('.wala1 img').clientWidth;
+        var paragraphs = document.querySelectorAll('.cont1 p');
+        var overlay = document.querySelector('.overlay-text');
+
+        var overlayHeight = imageHeight * 0.95;
+        var overlayWidth = imageWidth * 0.95;
+
+        overlay.style.height = overlayHeight + 'px';
+        overlay.style.width = overlayWidth + 'px';
+    };
+</script>
 </html>
