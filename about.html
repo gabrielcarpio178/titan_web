@@ -222,14 +222,19 @@
     window.onload = function() {
         var imageHeight = document.querySelector('.wala1 img').clientHeight;
         var imageWidth = document.querySelector('.wala1 img').clientWidth;
-        var paragraphs = document.querySelectorAll('.cont1 p');
-        var overlay = document.querySelector('.overlay-text');
+        var overlay = document.querySelector('.unod1 .overlay-text');
 
         var overlayHeight = imageHeight * 0.95;
         var overlayWidth = imageWidth * 0.95;
 
         overlay.style.height = overlayHeight + 'px';
         overlay.style.width = overlayWidth + 'px';
+
+        var heightDifference = overlay.clientHeight - imageHeight;
+
+        overlay.style.marginTop = (-heightDifference / 2) - 220 + 'px';
+        overlay.style.marginBottom = (-heightDifference / 2) - 150 + 'px';
     };
 </script>
+
 </html>
