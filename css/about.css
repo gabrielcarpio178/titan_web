@@ -1,0 +1,239 @@
+body{
+    font-family: Arial;
+}
+.about{
+    font-size: 38px;
+    justify-content: center;
+    text-align: center;
+    color: #405230;
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+.unod1{
+    display: flex;
+    flex-direction: row;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.overlay-text{
+    border: solid 1px #405230;
+    border-radius: 100px;
+    transform: translate(50%, -50%);
+    margin-top: -210px;
+    margin-left: -150px;
+    height: 95%;
+    width: 95%;
+}
+.wala1 img{
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+.pamagat2{
+    color: #405230;
+    font-weight: bold;
+}
+.tuo1 p{
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+.what{
+    margin-top: 100px;
+}
+.pamagat3{
+    text-align: center;
+    color: #405230;
+    font-size: 25px;
+}
+.pamagat4{
+    text-align: center;
+    color: #405230;
+    font-size: 20px;
+    margin-bottom: 100px;
+}
+.sapic{
+    display: flex;
+    flex-direction: row;
+    margin-right: 100px;
+    margin-left: 100px;
+}
+.wala2 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin-right: 100px;
+}
+.tuo2 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+.bgcolor1{
+    background-color: #E4ECD4;
+    height: 65vh;
+    width: 100%;
+}
+.betcolor{
+    color: #405230;
+    font-weight: bold;
+}
+.abso{
+    position: absolute;
+    margin-top: -30px;
+}
+.desc1{
+    line-height: 1.5rem;
+}
+.ano1{
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: -50px;
+}
+.ano1 p{
+    color: #405230;
+    font-size: 28px;
+    margin-top: -15px;
+}
+.teamContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.teamTitan {
+    width: 400px;
+    height: 6vh;
+    background-color: #E4ECD4;
+}
+.picsure{
+    /* position: absolute; */
+    margin-top: -70px;
+}
+.colpic{
+    text-align: center;
+}
+.bgcontainer {
+    margin-top: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bgcolor3 {
+    width: 900px;
+    height: 45vh;
+    background-color: #E4ECD4;
+    
+}
+.picrowbabaw{
+    /* position: absolute;
+    margin-top: -70px;
+    display: flex;
+    flex-direction: row; */
+}
+.picrowbabaw img{
+
+}
+.cor{
+    margin-top: 250px;
+}
+.pamagat5 p{
+    text-align: center;
+    font-size: 25px;
+    color: #405230;
+    text-transform: uppercase;
+}
+.pamagat5 hr{
+    width: 30%;
+}
+.vid{
+    text-align: center;
+    margin-top: 50px;
+}
+.bgcolor4 {
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.unodya,
+.unodya1 {
+    display: flex;
+    justify-content: space-between;
+}
+.dalomya{
+    margin-top: 60px;
+}
+
+.sulodya,
+.sulodya1 {
+    position: relative;
+    padding-right: 10px;
+    flex-basis: 33%;
+}
+
+.sulodya:not(:last-child)::after,
+.sulodya1:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 1px;
+    background-color: black;
+}
+
+.sulodya::before {
+    content: '';
+    position: absolute;
+    bottom: -30px;
+    left: 30px;
+    right: 30px;
+    height: 1px;
+    background-color: black;
+}
+
+.pama,
+.pama1 {
+    margin-left: 30px;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+        }
+.lama,
+.lama1 {
+    margin-left: 30px;
+    padding: 0;
+}
+
+.pama p,
+.pama1 p {
+    font-size: 20px;
+    color: #405230;
+    font-weight: bold;
+}
+
+.pama img,
+.pama1 img {
+    margin-right: 10px;
+    height: 100%;
+    width: auto;
+}
+@media screen and (min-width: 320px){
+    
+}
+
+@media screen and (min-width: 1020px){
+
+    .pamagat1{
+        font-size: 20px;
+        margin-bottom: 40px;
+    }
+
+}
