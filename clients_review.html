@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/clients_review.css">
     <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
     <title>Clients Review</title>
 </head>
 <body>
@@ -111,7 +112,10 @@
                 <p>At our company, we strive to provide personalized customer service and go above and beyond to meet our customers' needs. Lori was no exception. She was constantly overwhelmed and struggling to manage her workload. So, we offered Lori a virtual assistant who could take some of the tasks off her plate. After extensive research and interviewing for the perfect fit, we were able to find a virtual assistant that could help Lori efficiently manage her workload and free up some of her time.</p>
             </div>
             <div class="testimonial-image">
-                <img src="images/Annotation 2024-01-29 193548 1.png" alt="Image 1">
+                <video controls width="300">
+                    <source src="your_video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
             </div>
         </div>
 
@@ -121,7 +125,10 @@
                 <p>At our company, we strive to provide personalized customer service and go above and beyond to meet our customers' needs. Lori was no exception. She was constantly overwhelmed and struggling to manage her workload. So, we offered Lori a virtual assistant who could take some of the tasks off her plate. After extensive research and interviewing for the perfect fit, we were able to find a virtual assistant that could help Lori efficiently manage her workload and free up some of her time.</p>
             </div>
             <div class="testimonial-image">
-                <img src="images/Annotation 2024-01-29 193548 1.png" alt="Image 1">
+                <video controls width="300">
+                    <source src="your_video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
             </div>
         </div>
     </div>
@@ -135,7 +142,9 @@
         </div>
         <div class="virtual-assistants-image">
             <div class="va-image">
-                <img src="images/sarah.png" alt="Image 1">
+                <video controls width="300">
+                    <source src="your_video.mp4" type="video/mp4">
+                </video>
             </div>
         </div>
     </div>
@@ -145,6 +154,52 @@
         <img src="images/Annotation 2024-01-29 202440 1 (1).png" alt="Image 1">
         <img src="images/Annotation 2024-01-29 202440 1 (1).png" alt="Image 1">
     </div>
+
+    <footer class="f-footer">
+        <section class="f-section">
+            <div class="left-content">
+                <div class="f-img">
+                    <div class="img-1 f-image">
+                        <img src="images/Titan_Logo_png.png" alt="titan logo">
+                    </div>
+                    <div class="img-2 f-image">
+                        <img src="images/Facebook_Logo_2023.png" alt="facebook logo" class="f-img" id="facebook">
+                    </div>
+                    <div class="img-3 f-image">
+                        <img src="images/instagram-icon-logo-free-png.webp" alt="instagram logo" class="f-img" id="instagram">
+                    </div>
+                    <div class="img-4 f-image">
+                        <img src="images/linkedin_icon.png" alt="linkIn logo" class="f-img" id="linkIn">
+                    </div>
+                </div>
+                <div class="copy-right">
+                    <p class="cop24">Copy © 2024 Bayer VA Services - All Right Reserved.</p> 
+                    <p class="powby">Powered By <u>GoDady</u></p>
+                </div>
+            </div>
+            <div class="right-content">
+                <form id="email">
+                    <input type="email" id="email" class="email-form" placeholder="Enter your Email">
+                    <button type="submit" class="btn_submit">SUBSCRIBE</button>
+                </form>
+                <div class="company-link">
+                    <div class="company">
+                        <div class="header-comlin">Company</div>
+                        <div class="content-comlin">Blogs</div>
+                        <div class="content-comlin">Book A Call</div>
+                        <div class="content-comlin">VA Tasks</div>
+                    </div>
+                    <div class="links">
+                        <div class="header-comlin">Links</div>
+                        <div class="content-comlin">Our VA's and Clients</div>
+                        <div class="content-comlin">Privacy Policy</div>
+                        <div class="content-comlin">Terms and Conditions</div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </footer>
 
     <script>
         const modal = document.querySelector('.modal');
@@ -176,6 +231,35 @@
 
             slides[currentSlide].classList.add('active-slide');
         }
+
+
+        function handleIntersection(entries, observer) {
+            entries.forEach(entry => {
+                console.log(entry.target, entry.isIntersecting);
+                if (entry.isIntersecting) {
+                    if (entry.target.classList.contains('testimonial-content') || entry.target.classList.contains('testimonial-image')) {
+                        entry.target.classList.add('in-view', 'left');
+                    } else if (entry.target.classList.contains('virtual-assistant-reviews')) {
+                        entry.target.classList.add('in-view', 'bottom');
+                    } else if (entry.target.classList.contains('virtual-assistants')) {
+                        entry.target.classList.add('in-view', 'bottom');
+                    }
+                } else {
+                    entry.target.classList.remove('in-view', 'left', 'bottom');
+                }
+            });
+        }
+
+        const observer = new IntersectionObserver(handleIntersection, {
+            threshold: 0.25
+        });
+
+        const elementsToAnimate = document.querySelectorAll('.testimonial-content, .testimonial-image, .virtual-assistant-reviews, .virtual-assistants');
+
+        elementsToAnimate.forEach(element => {
+            observer.observe(element);
+        });
+
     </script>
 
 </body>
