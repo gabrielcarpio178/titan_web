@@ -1,0 +1,22 @@
+.va-niches{
+    text-align: center;
+    align-items: center;
+}
+.va-niches-container{
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    text-align: left;
+}
+.va-services{
+    text-align: center;
+    align-items: center;
+}
+.social-media{
+    margin-top: 10px;
+    align-items: center;
+    text-align: center;
+    color: #405230;
+    text-decoration: none;
+}
